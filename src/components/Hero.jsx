@@ -19,14 +19,12 @@ const Hero = () => {
                 autoPlay 
                 muted 
                 playsInline
-                aria-label="MacBook Pro promotional video"
-                onError={(e) => console.error('Video failed to load:', e)}
             >
                 <track kind="captions" src="/videos/hero.vtt" srcLang="en" label="English" />
                 Your browser does not support the video tag.
             </video>
 
-            <button type="button" onClick={() => {/* Add buy functionality */}} aria-label="Buy MacBook Pro">
+            <button type="button">
                 Buy
             </button>
 
