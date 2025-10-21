@@ -1,7 +1,9 @@
 import {useMediaQuery} from "react-responsive";
 import {useGSAP} from "@gsap/react";
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+gsap.registerPlugin(ScrollTrigger);
 const Showcase = () => {
     const isTablet = useMediaQuery({ query: '(max-width: 1024px)'});
 
