@@ -26,8 +26,20 @@ const moveGroup = (group, x) => {
 }
 
 const ModelSwitcher = ({ scale, isMobile }) => {
-    const SCALE_LARGE_DESKTOP = 0.08;
-    const SCALE_LARGE_MOBILE = 0.05;
+const ANIMATION_DURATION = 1;
+const OFFSET_DISTANCE = 5;
+const SCALE_LARGE_DESKTOP = 0.08;
+const SCALE_LARGE_MOBILE = 0.05;
+
+const fadeMeshes = (group, opacity) => {
+    if(!group) return;
+    // ... rest of function
+};
+
+const ModelSwitcher = ({ scale, isMobile }) => {
+    const smallMacbookRef = useRef();
+    // ... rest of component
+};
 
     const smallMacbookRef = useRef();
     const largeMacbookRef = useRef();
